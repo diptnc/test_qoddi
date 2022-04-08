@@ -11,7 +11,7 @@ class testController extends Controller
 
 
 public function index(){
-$users = DB::select('select * from `railway`.`test`');
+$users = DB::select('select * from `tests`');
 return view('test',['users'=>$users]);
 }
 }
